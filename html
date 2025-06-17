@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Responsivo e Acessível</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Site Responsivo e Acessível</h1>
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#imagem">Imagem</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="home">
+      <h2>Início</h2>
+      <p>Eco Vigia: olhos da terra 
+
+Tecnologia como aliada no combate aos crimes ambientais</p>
+      <button onclick="mostrarAlerta()" aria-label="Clique aqui para receber uma mensagem">Clique aqui</button>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Este site é feito com HTML semântico, CSS responsivo e boas práticas de acessibilidade.</p>
+    </section>
+
+    <section id="imagem">
+      <h2>Imagem com Hiperlink</h2>
+      <p>A imagem abaixo é clicável e leva ao site de exemplo:</p>
+      <a href="https://www.exemplo.com&quot; target="_blank" class="imagem-link" aria-label="Ir para o site Exemplo em nova aba">
+        <img src="https://placekitten.com/800/400&quot; alt="Gatinho fofo olhando para a câmera">
+        <p>Visite o site Exemplo</p>
+      </a>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Para mais informações, envie um e-mail para:
+        <a href="exemplo@email.com" aria-label="Enviar e-mail para exemplo@email.com">exemplo@email.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
